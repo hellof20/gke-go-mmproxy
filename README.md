@@ -44,7 +44,7 @@ gcloud compute forwarding-rules create my-tcp-lb-ipv4-forwarding-rule \
 
 ## Testing
 Note: Wait for 5 minutes after the LB is created before starting the test
-#### Test from outside
+#### Send request from outside
 ```
 curl http://34.160.48.200/
 ```
