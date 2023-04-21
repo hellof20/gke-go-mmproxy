@@ -1,5 +1,9 @@
 # gke-go-mmproxy
 
+## Deployment architecture
+![image](https://user-images.githubusercontent.com/8756642/233600351-1b1f0721-8387-4170-9cb6-e1c490f4d050.png)
+
+
 ## Deploy sample nginx with go-mmproxy
 ```
 kubectl apply -f nginx.yaml
