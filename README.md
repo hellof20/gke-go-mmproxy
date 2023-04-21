@@ -47,3 +47,4 @@ curl http://34.160.48.200/
 replace 34.160.48.200 to your tcp proxy lb ip
 #### Check client ip in nginx access log
 ![image](https://user-images.githubusercontent.com/8756642/233582055-8386ab5b-2955-4450-b76f-09a3f017bbbd.png)
+you can see that this ip is the client ip not tcp proxy lb ip.
