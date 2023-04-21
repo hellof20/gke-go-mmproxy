@@ -30,7 +30,7 @@ spec:
         image: hellof20/go-mmproxy:v6
         command: ["/bin/sh", "-c" ]
         args:
-          - /app/go-mmproxy -l 0.0.0.0:8080 -4 127.0.0.1:80 -v 2
+          - /app/go-mmproxy -l 0.0.0.0:8080 -4 127.0.0.1:80
         securityContext:
           privileged: True
       - name: nginx
