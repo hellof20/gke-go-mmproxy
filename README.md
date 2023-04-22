@@ -1,5 +1,9 @@
 # gke-go-mmproxy
 
+[go-mmproxy](https://github.com/path-network/go-mmproxy) is a standalone application that unwraps HAProxy's PROXY protocol (also adopted by other projects such as NGINX) so that the network connection to the end server comes from client's - instead of proxy server's - IP address and port number.
+
+go-mmproxy is deployed on the virtual machine by default. This project deploys go-mmproxy on Google Cloud GKE, so that the Pod deployed behind the TCP Proxy LB can get the real IP of the client.
+
 ## Deployment architecture
 ![image](https://user-images.githubusercontent.com/8756642/233600351-1b1f0721-8387-4170-9cb6-e1c490f4d050.png)
 
