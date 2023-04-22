@@ -52,3 +52,14 @@ replace 34.160.48.200 to your tcp proxy lb ip
 #### Check client ip in nginx access log
 ![image](https://user-images.githubusercontent.com/8756642/233582055-8386ab5b-2955-4450-b76f-09a3f017bbbd.png)
 you can see that this ip is the client ip not tcp proxy lb ip.
+
+
+## Clean
+```
+gcloud compute forwarding-rules delete my-tcp-lb-ipv4-forwarding-rule --global --quiet
+gcloud compute target-tcp-proxies delete my-tcp-lb-target-proxy --global --quiet
+gcloud compute backend-services delete my-tcp-lb --global --quiet
+gcloud compute health-checks delete my-tcp-health-check --quiet
+kubectl delete -f nginx.yaml
+kubectl delete -f nginx-neg.yaml
+```
